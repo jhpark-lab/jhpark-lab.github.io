@@ -36,6 +36,17 @@ window.PUBLICATIONS = [
     url: "",
     index: []
   },
+  {
+    id: "n2sf-gaps",
+    year: 2026,
+    title: "Analysis of AI Security Control Gaps in the N2SF Using an Integrated AI Security Control Matrix",
+    authors: "Haneul Jo, Junhyuk Park, Jaehee Lee, Wan-Bok Lee, Hyo-Beom Ahn",
+    venue: "Proceedings of the KISM 2026 Fall Conference",
+    kind: "conference", scope: "Domestic",
+    role: "co", status: "Accepted", best: false,
+    url: "",
+    index: []
+  },
 
   /* ---------- CISC-W'26 ---------- */
   {
@@ -54,6 +65,17 @@ window.PUBLICATIONS = [
     year: 2026,
     title: "Performance Analysis of Intrusion Detection Using Synthetic Data in Imbalanced Data Environments",
     authors: "Jaehee Lee, Junhyuk Park, Haneul Jo, Hyo-Beom Ahn",
+    venue: "Conference on Information Security and Cryptography Winter 2026 (CISC-W'26)",
+    kind: "conference", scope: "Domestic",
+    role: "co", status: "Published", best: false,
+    url: "",
+    index: []
+  },
+  {
+    id: "ai-sec-guidelines",
+    year: 2026,
+    title: "Comparative Analysis of Domestic and International AI Security Guidelines and Proposal of an Integrated Security Control Matrix",
+    authors: "Haneul Jo, Junhyuk Park, Jaehee Lee, Hyo-Beom Ahn",
     venue: "Conference on Information Security and Cryptography Winter 2026 (CISC-W'26)",
     kind: "conference", scope: "Domestic",
     role: "co", status: "Published", best: false,
