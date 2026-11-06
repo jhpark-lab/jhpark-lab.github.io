@@ -38,8 +38,8 @@ a{color:inherit}
 
 /* ---------- liquid glass ---------- */
 /* fallback (no SVG backdrop refraction): frosted */
-.glass{position:relative;isolation:isolate;background:var(--glass);
-  -webkit-backdrop-filter:blur(16px) saturate(170%);backdrop-filter:blur(16px) saturate(170%);
+.glass{position:relative;isolation:isolate;background:var(--glass-clear);
+  -webkit-backdrop-filter:blur(3px) saturate(165%) brightness(1.03);backdrop-filter:blur(3px) saturate(165%) brightness(1.03);
   box-shadow:
     inset 1.5px 1.5px 0 -0.5px var(--spec),          /* top-left rim catchlight */
     inset -1px -1px 0 -0.5px rgba(255,255,255,.35),   /* bottom-right rim */
@@ -48,7 +48,8 @@ a{color:inherit}
     0 10px 30px -10px var(--glass-shade),0 1px 3px var(--glass-shade)}
 /* real refraction (Chromium): edge lens built per element, see script */
 .lg .glass{background:var(--glass-clear);-webkit-backdrop-filter:var(--lens) saturate(165%) brightness(1.03);backdrop-filter:var(--lens) saturate(165%) brightness(1.03)}
-.lg .glass.pill{background:color-mix(in srgb,var(--bg) 52%,transparent)}
+.glass.pill{background:color-mix(in srgb,var(--bg) 52%,transparent);-webkit-backdrop-filter:blur(10px) saturate(165%);backdrop-filter:blur(10px) saturate(165%)}
+.lg .glass.pill{-webkit-backdrop-filter:var(--lens) saturate(165%) brightness(1.03);backdrop-filter:var(--lens) saturate(165%) brightness(1.03)}
 .glass::before{ /* specular sheen that follows the pointer */
   content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:-1;
   background:radial-gradient(180px circle at var(--mx,25%) var(--my,0%),rgba(255,255,255,.55),transparent 65%);opacity:.5;mix-blend-mode:overlay}
@@ -299,7 +300,7 @@ footer{padding-block:28px;border-top:1px solid var(--line);font-size:.78rem;font
 
 <main>
   <section class="hero" id="home">
-    <img src="photo.jpg" alt="Portrait of Junhyuk Park" id="photo">
+    <picture><source srcset="photo%28dark%29.jpg" media="(prefers-color-scheme: dark)"><img src="photo.jpg" alt="Portrait of Junhyuk Park" id="photo"></picture>
     <div class="shade"></div>
     <div class="plate glass" id="plate">
       <span class="eyebrow" style="color:inherit;opacity:.6">AI Researcher</span>
